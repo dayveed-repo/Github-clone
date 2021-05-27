@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github clone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- navbar -->
+    <div id="Navbar">
+
+        <div id="NavUpper">
+            <i class="fas fa-align-justify"></i>
+
+            <div id="NavUpperLeft">
+                <i class="fab fa-github"></i>      
+            </div>
+
+            <div id="NavRight">
+                <i class="far fa-bell"></i>
+                <i class="fas fa-plus" id="Plus"></i>
+                <img src="https://observer.com/wp-content/uploads/sites/2/2017/01/skyler_h-251-edit.jpg?quality=80" />
+            </div>
+        </div>
+
+        <div id="NavDropDown">
+                <form id="NavSearch">
+                    <input type="text" id="SearchUser" placeholder="search or jump to..."/>
+                    <p>/</p>
+                </form>  
+                
+                <div id="NavOption">
+                    <h4>Pull Request</h4>
+                </div>
+
+                <div id="NavOption">
+                     <h4>Issues</h4>
+                </div>
+               
+                <div id="NavOption">
+                     <h4>CodeSpaces</h4>
+                </div>
+               
+                <div id="NavOption">
+                     <h4>Market Place</h4>
+                </div>
+               
+                <div id="NavOption" className="showLarge">
+                     <h4>Explore</h4>
+                </div>
+               
+                <div id="NavOption">
+                     <h4>Sponsor</h4>
+                </div>
+               
+                <div id="NavOption">
+                    <h4>Settings</h4>
+                </div>
+            
+            </div>
+
+    </div>
+
+    <!-- body -->
+    <div id="MainBody">
+        <!-- header info section that shows on smaller screen size -->
+        <div id="UserInfo">
+            <div id="InfoUpper">
+                <img src="https://observer.com/wp-content/uploads/sites/2/2017/01/skyler_h-251-edit.jpg?quality=80" />
+                <h1 id="login">Dayveed-repo</h1>
+            </div>
+
+            <p id="bio">A passionate front end developer with knowledge and Skills in HTML, CSS, JavaScript, react and react native</p>            
+        </div>
+
+        <!-- header options section -->
+        <div id="BodyHeader">
+            <div id="HeaderOption">
+                <i class="fas fa-book-open" id="HeaderIcon"></i>
+                <p>OverView</p>
+            </div>
+
+            <div id="HeaderOption" class="selected">
+                <i class="fas fa-book" id="HeaderIcon"></i>
+                <p>Repositories</p>
+                <h5 id="num_of_repos">5</h5>
+            </div>
+
+            <div id="HeaderOption">
+                <i class="far fa-list-alt" id="HeaderIcon"></i>
+                <p>Projects</p>
+            </div>
+
+            <div id="HeaderOption">
+                <i class="fas fa-cube" id="HeaderIcon"></i>
+                <p>Packages</p>
+            </div>
+        </div>
+
+        <!-- middle part of the body after the header -->
+        <div id="BodyContainer">
+            <!-- left part of the body on larger screen -->
+            <div id="BodyLeft">
+                <div id="BodyLeftUpper">
+                    <img src="https://observer.com/wp-content/uploads/sites/2/2017/01/skyler_h-251-edit.jpg?quality=80" />
+                    <i class="far fa-smile"></i>
+                </div>
+                
+                <div class="BodyLeftInfo">
+                    <h3 id="name">David Ebireni</h3>
+                    <h1 id="login">Dayveed-repo</h1>
+                </div>
+
+                <p id="bio">A end developer with knowledge and Skills in HTML, CSS, JavaScript, react and react native</p>            
+            </div>
+
+            <!-- right part on larger screen -->
+            <div id="BodyRight">
+                <input type="text" placeholder="Find repository" />
+    
+                <h4 id="num_of_repos">124 results for repositories</h4>
+    
+              <!-- single  repository -->
+              <div id="repositoryContainer">
+                <div id="RepositoryItem">
+                    <div id="RepositoryUpper">
+                        <h3>Soko store react repo</h3>
+                        <button><i class="far fa-star"></i> Star</button>
+                    </div>
+    
+                    <div id="RepositoryLower">
+                        <p><i class="fas fa-circle"></i> HTml</p>
+                        <p><i class="far fa-star"></i> Star</p>
+                        <p><i class="fas fa-code-branch"></i> 2</p>
+                        <p>Updated on october 1</p>
+                    </div>
+                </div>
+    
+            </div>
+            </div>
+        </div>
+
+     </div>
+
+</body>
+
+<script src="index.js"></script>
+</html>

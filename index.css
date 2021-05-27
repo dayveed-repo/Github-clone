@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #24292e;
+    padding: 8px;
+}
+
+#NavSearch {
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid #595c5f;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+#NavSearch p {
+    padding: 2px 4px;
+    border: 1px solid #595c5f;
+    border-radius: 3px;
+    font-size: x-small;
+}
+
+#NavSearch input {
+    background: transparent;
+    color: white;
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    margin: 0px 8px;
+}
+
+#NavUpper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#NavDropDown {
+    padding: 10px 5px;
+    display: none;
+    flex-direction: column;
+} 
+
+#NavOption{
+    padding: 5px 0px;
+    margin: 0px 5px;
+    cursor: pointer;
+    border-bottom: 1px solid darkgray;
+}
+
+#NavDropDown h4 {
+    font-size: small;
+    color: white;
+    transition: transform 1s ease-in-out;
+    font-weight: 200;
+}
+
+#NavDropDown h4:hover{
+    transform: scale(0.97);
+    opacity: 0.7;
+}
+
+#NavUpperLeft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#NavUpperText {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+#NavUpperText:hover {
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+#NavRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.fa-align-justify{
+    color: white;
+    font-size: 20px !important;
+    cursor: pointer;
+}
+
+.fab {
+    color: white;
+    font-size: 25px !important;
+}
+
+.fa-bell {
+    color: white;
+    font-size: 15px !important;
+}
+
+#Plus {
+    color: white;
+    font-size: 12px !important;
+    display: none;
+}
+
+#NavRight img {
+    display: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 1px solid rgb(65, 62, 62);
+}
+
+#MainBody {
+    width: 100%;
+}
+
+#BodyHeader {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 15px;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#HeaderOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 0.7rem;
+}
+
+.selected {
+    border-bottom: 1px solid orange;
+}
+
+#HeaderOption p {
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+#HeaderOption h5 {
+    font-size: 12px !important;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px;
+    text-align: center;
+    border-radius: 999px;
+    background-color: lightgrey;
+}
+
+#HeaderIcon {
+    color: rgb(145, 144, 144);
+    font-size: smaller !important;
+}
+
+#UserInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+
+#UserInfo p {
+    padding-left: 1.2rem;
+    margin-top: 0.4rem;
+    font-size: small;
+    max-width: 80%;
+}
+
+#InfoUpper {
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+}
+
+#InfoUpper h1{
+    font-size: 20px;
+    margin-left: 1.4rem;
+}
+
+#InfoUpper img {
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+#BodyContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0rem 0.6rem;
+}
+
+#BodyLeft {
+    display: none;
+    flex-direction: column;
+    width: 25%;
+    margin-top: -10px;
+    align-items: center;
+}
+
+.BodyLeftInfo{
+    width: 90%;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.BodyLeftInfo h3{
+    font-size: larger;
+}
+
+.BodyLeftInfo h1 {
+    color: rgb(73, 73, 73);
+    font-size: small;
+    font-weight: 700 !important;
+    margin-top: 0.2rem;
+}
+
+#BodyLeft p{
+    width: 90%;
+    font-size: small;
+    font-weight: 500 !important;
+}
+
+#BodyLeftUpper {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.fa-smile {
+    margin-left: -40px;
+    margin-top: -90px;
+    background-color: white;
+    padding: 0.3rem;
+    border: 1px solid grey;
+    border-radius: 999px;
+    z-index: 3;
+}
+
+#BodyLeftUpper img {
+    height: 12rem;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#BodyRight {
+    padding: 0rem 0.7rem;
+    flex: 1;
+    margin-left: 0.3rem;
+}
+
+#BodyRight input {
+    background: transparent;
+    border: 1px solid lightgrey;
+    color: gray;
+    outline-width: 0;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin: 0.6rem 0rem;
+}
+
+#BodyRight h4 {
+    font-weight: bold;
+    font-size: small;
+    width: 100%;
+    padding: 0.6rem 0rem;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+#RepositoryItem {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+#RepositoryUpper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#RepositoryUpper h3 {
+    font-size: medium;
+    color: #1b77bd;
+    font-weight: 800 !important;
+    cursor: pointer;
+}
+
+#RepositoryUpper h3:hover {
+    text-decoration: underline;
+}
+
+#RepositoryUpper button {
+    display: flex;
+    font-size: x-small;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#RepositoryLower {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#RepositoryLower p {
+    font-size: 0.7rem;
+    font-weight: 100 !important;
+}
+
+.fa-circle {
+    font-size: x-small !important;
+    color: green;
+}
+
+@media(min-width: 570px){
+    .fa-align-justify{
+        display: none !important;
+    }
+
+    #NavRight img {
+        display: inline-flex;
+    }
+
+    #Plus {
+        display: inline-flex;
+    }
+
+    #BodyLeft {
+        display: flex;
+    }
+
+    #UserInfo{
+        display: none;
+    }
+}
+
+@media (min-width: 570px){
+    #NavUpperLeft{
+        flex: 0.9;
+        max-width: 500px;
+    }
+
+    #NavRight {
+        width: 15%;
+        max-width: 100px;
+    }
+    
+    #BodyHeader {
+        justify-content: center;
+    }
+
+    #HeaderOption {
+        margin-right: 2.5rem;
+    }
+    
+    #RepositoryLower {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    #BodyLeftUpper img{
+        width: 9rem;
+        height: 9rem;
+    }
+}
