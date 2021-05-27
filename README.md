@@ -1,2 +1,2 @@
 # Github-clone
-this is my project submission for the Assignment by Buy Coins Company. Really enjoyed working on this build hopefully it will be accepted by the company
+This is my solution to the project for **Buy Coins Compan**y. Really enjoyed working on this build hopefully it will be accepted by the company
